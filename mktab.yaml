@@ -1,0 +1,11 @@
+AttributeDefinitions:  
+  - AttributeName: 'id'  
+    AttributeType: S 
+TableName: 'test' 
+KeySchema: 
+  - AttributeName: 'id'  
+    KeyType: HASH 
+BillingMode: PROVISIONED 
+ProvisionedThroughput: 
+  ReadCapacityUnits: 3  
+  WriteCapacityUnits: 3 

@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  dynamo:
+    # image: dimaqq/dynalite:latest
+    image: amazon/dynamodb-local:1.13.6
+    environment:
+      DYNAMODB_PORT: 8000
+    ports:
+      - "8000:8000"
